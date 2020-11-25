@@ -3,7 +3,7 @@ import java.util.Random;
 
 public class RandomVector
 {
-    private Random m_rand;
+    private Random m_rand = new Random();
 
     //Step 1: Private static instance
     private static RandomVector m_instance = null;

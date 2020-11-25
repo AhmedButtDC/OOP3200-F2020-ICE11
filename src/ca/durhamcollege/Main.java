@@ -17,7 +17,7 @@ public class Main
         Vector<Vector2D> points = new Vector<Vector2D>();
 
         //Builds a vector of 4 points
-        for (int i = 1; i < numberOfPoints; i++)
+        for (int i = 0; i < numberOfPoints; i++)
         {
             points.add(Vector2D.zero());
         }
