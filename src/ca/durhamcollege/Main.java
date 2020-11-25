@@ -32,9 +32,17 @@ public class Main
         System.out.println("You Entered " + point2.toString() + " for the second point" );
         System.out.println("--------------------------------------------------------------\n" );
 
+        Vector2D randomVector2D = RandomVector.createVector2D(point1, point2);
+        System.out.println("\n--------------------------------------------------------------" );
+        System.out.println("Random Vector is " + randomVector2D.toString());
+        System.out.println("--------------------------------------------------------------\n" );
+
+
+        /*
         System.out.printf("Magnitude of first point is: %.3f \n", point1.getMagnitude());
         System.out.printf("Magnitude of second point is: %.3f \n",point2.getMagnitude());
         System.out.printf("Distance between first point and second point is: %.3f \n", Vector2D.distance(point1, point2));
         System.out.println("--------------------------------------------------------------\n" );
+        */
     }
 }
