@@ -28,12 +28,12 @@ public class RandomVector
     {
         //Generate random X value
         float minX = Math.min(start.getX(), end.getX());
-        float maxX = Math.min(start.getX(), end.getX());
+        float maxX = Math.max(start.getX(), end.getX());
         float randomX = (m_rand.nextFloat() * maxX) + minX;
 
         //Generate random Y value
         float minY = Math.min(start.getY(), end.getY());
-        float maxY = Math.min(start.getY(), end.getY());
+        float maxY = Math.max(start.getY(), end.getY());
         float randomY = (m_rand.nextFloat() * maxY) + minY;
 
         return new Vector2D(randomX, randomY);

@@ -22,7 +22,7 @@ public class Main
             points.add(Vector2D.zero());
         }
 
-        for (int i = 0; i < 2; i++)
+        for (int i = 0; i < 3; i+=2)
         {
             System.out.print("Enter the first point (x, y): ");
             prompt = keyboard.nextLine();
