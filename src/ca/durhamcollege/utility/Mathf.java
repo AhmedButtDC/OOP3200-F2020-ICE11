@@ -1,5 +1,7 @@
 package ca.durhamcollege.utility;
 
+import java.util.Random;
+
 public class Mathf
 {
     // static constants
@@ -10,6 +12,20 @@ public class Mathf
     public static final float NegativeInfinity = Float.NEGATIVE_INFINITY;
     public static final float Deg2Rad = 0.01745329f;
     public static final float Rad2Deg = 57.29578f;
+
+    private Mathf() {}
+
+    public static float RandomRange(final float min, final float max)
+    {
+        Random random = new Random();
+        return (random.nextFloat() * (max - min)) + min;
+    }
+
+    public static float RandomRange(final int min, final int max)
+    {
+        Random random = new Random();
+        return (random.nextInt() * (max - min)) + min;
+    }
 
     public static float Sin(final float f)
     {
@@ -267,6 +283,4 @@ public class Mathf
         }
         return num;
     }
-
-    private Mathf() {}
 }
