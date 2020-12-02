@@ -1,7 +1,8 @@
-package ca.durhamcollege;
+package ca.durhamcollege.core;
 
-import java.util.List;
-import java.util.Random;
+import ca.durhamcollege.utility.RandomVector;
+import ca.durhamcollege.utility.Vector2D;
+
 import java.util.Scanner;
 import java.util.Vector;
 

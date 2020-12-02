@@ -1,4 +1,5 @@
-package ca.durhamcollege;
+package ca.durhamcollege.utility;
+
 import java.util.Random;
 
 public class RandomVector
