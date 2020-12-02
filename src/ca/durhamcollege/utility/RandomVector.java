@@ -28,13 +28,13 @@ public class RandomVector
     public final Vector2D createVector2D(Vector2D start, Vector2D end)
     {
         //Generate random X value
-        float minX = Math.min(start.getX(), end.getX());
-        float maxX = Math.max(start.getX(), end.getX());
+        float minX = Mathf.Min(start.getX(), end.getX());
+        float maxX = Mathf.Max(start.getX(), end.getX());
         float randomX = (m_rand.nextFloat() * maxX) + minX;
 
         //Generate random Y value
-        float minY = Math.min(start.getY(), end.getY());
-        float maxY = Math.max(start.getY(), end.getY());
+        float minY = Mathf.Min(start.getY(), end.getY());
+        float maxY = Mathf.Max(start.getY(), end.getY());
         float randomY = (m_rand.nextFloat() * maxY) + minY;
 
         return new Vector2D(randomX, randomY);
